@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+
+
+</head>
+<body>
+<p>Encrypt</p>
+<input placeholder="data" id="data"></input>
+<input placeholder="key" id="key"></input>
+<button onclick="button_click()">Submit</button>
+<p>Decrypt</p>
+<input placeholder="data" id="datab"></input>
+<input placeholder="key" id="keyb"></input>
+<button onclick="button_click2()">Submit</button>
+<p id="results"></p>
+
+<script>
+    function button_click(){
+var dataa = document.getElementById("data").value;
+var keya = document.getElementById("key").value;
+document.getElementById("results").innerText = encrypt(dataa, keya);
+    }
+    function button_click2(){
+var dataa = document.getElementById("datab").value;
+var keya = document.getElementById("keyb").value;
+document.getElementById("results").innerText = decode(dataa, keya);
+    }
+</script>
+<script src="downtable.js"></script>
+</body>
+</html>
