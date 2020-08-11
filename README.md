@@ -25,3 +25,8 @@ In a script, either call `encrypt(data, key);` to encrypt data using the key pro
     > encrypt("Hello World!", "Secret Code");
     Output: "S3:e1:S1:S1:r1:e7:e13:r1: 1:S1:r0:S5:"
 Separation only happens with the `:` character and cannot be anything else. Furthermore, an encryption key cannot contain a `:`. You can process the data afterwards to allow it to include `:`, or update the scripts to allow usage of `:`. You can use `:` in data.
+
+To decrypt the data use `decode(data, key);` to do just that.
+
+**`data`** - Encrypted version of data. Has to be submitted as a string.
+**`key`** - The key used to decrypt the data. Has to be the same key that was used to encrypt it.
