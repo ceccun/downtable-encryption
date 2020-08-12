@@ -2,6 +2,10 @@
 Downtable Encryption is a simple match-based encryption system written in Javascript.
 ### Supported Languages
 - Javascript
+
+## Test it out
+You can test out Downtable at [https://stella.hs.vc/downtable-encryption](https://stella.hs.vc/downtable-encryption)
+
 ## Install
 Add Downtable Encryption to your HTML files in a script tag either two ways.
 ### Self Hosted Downtable
