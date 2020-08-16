@@ -1,7 +1,8 @@
 # Stella Downtable Encryption
-Downtable Encryption is a simple match-based encryption system written in Javascript.
+Downtable Encryption is a simple match-based encryption system written in Javascript and C#.
 ### Supported Languages
 - Javascript
+- C#
 
 ## Test it out
 You can test out Downtable at [https://stella.hs.vc/downtable-encryption](https://stella.hs.vc/downtable-encryption)
