@@ -19,12 +19,12 @@
     function button_click(){
 var dataa = document.getElementById("data").value;
 var keya = document.getElementById("key").value;
-document.getElementById("results").innerText = encrypt(dataa, keya);
+document.getElementById("results").innerText = encrypt(btoa(dataa), keya);
     }
     function button_click2(){
 var dataa = document.getElementById("datab").value;
 var keya = document.getElementById("keyb").value;
-document.getElementById("results").innerText = decode(dataa, keya);
+document.getElementById("results").innerText = atob(decode(dataa, keya));
     }
 </script>
 <script src="downtable.js"></script>
