@@ -3,7 +3,7 @@
 function encrypt(data, key){
     var sourcemap = "abcdefghijklmnopqrstuvwxyz ABCEFGHIJKLMNOPQRSTUVWXYZ`¬!£$%^&*()_+1234567890-=[]{};'#:@~,./<>?\|"
 var table = sourcemap.split("");
-var datad = data;
+var datad = btoa(data);
 var ackey = key;
 var keyusage = "";
 var mappedkey = [];
@@ -50,7 +50,7 @@ var datamapped = datad.split(":");
 var output = "";
 datamapped.splice(-1,1)
 datamapped.forEach(decoder);
-return output;
+return atob(output);
 
 function decoder(item, index){
     var indexintab = mappedkey.indexOf(item);
